@@ -1,0 +1,73 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+}
+#app {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    height: 80px;
+}
+header h1 {
+    margin: 0;
+}
+.route {
+    height: 50px;
+    padding: 10px;
+}
+.main-tabs {
+    margin-top: 20px;
+    height: 35px;
+}
+.main-tabs ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    padding-left: 40px;
+}
+.main-tabs ul li {
+    display: inline-block;
+    height: 100%;
+    margin: 0 5px;
+    min-width: 80px;
+    border: 1px solid black;
+    border-bottom: inherit;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.main-tabs ul li a {
+    text-decoration: inherit;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+footer {
+    height: 80px;
+    background-color: black;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 0 40px;
+}
+footer a {
+    color: inherit;
+}
