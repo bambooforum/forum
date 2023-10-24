@@ -1,0 +1,10 @@
+form {
+    width: 350px;
+    margin: auto;
+}
+form > div {
+    margin: 10px 0;
+}
+form > .save {
+    text-align: right;
+}

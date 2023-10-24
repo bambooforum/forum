@@ -1,0 +1,78 @@
+.user {
+    border: 2px solid black;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 250px 1fr;
+}
+
+.part1 {
+    text-align: center;
+}
+
+.part1 h2 {
+    margin: 0;
+}
+
+.part1 img {
+    height: 100px;
+    max-width: 240px;
+    margin: auto;
+}
+.numb ul {
+    padding: 0;
+}
+.numb ul li{
+    list-style: none;
+}
+  
+.part2 {
+    position: relative;
+}
+.part2 .editbtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.part2 h2 {
+    text-align: center;
+}
+
+.user-tabs {
+    margin-top: 20px;
+    height: 30px;
+}
+.user-tabs ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    padding-left: 40px;
+    position: relative;
+    z-index: 12;
+    transform: translateY(1px);
+}
+.user-tabs ul li {
+    display: inline-flex;
+    height: 100%;
+    margin: 0 5px;
+    min-width: 80px;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.user-tabs ul li.active {
+    border-bottom: 1px solid aliceblue;
+    z-index: 10;
+    position: relative;
+    background-color: aliceblue;
+  
+}
+.user-info {
+    border-top: 1px solid black;
+}
