@@ -1,0 +1,52 @@
+
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    table {
+        width: 17%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    /* Estilo de las imágenes */
+    .user img {
+        max-width: 30px;
+        max-height: 30px;
+        margin-right: 10px;
+    }
+
+    /* Estilo de la barra de búsqueda */
+    #searchInput {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilo para los nombres de los usuarios */
+    .name {
+        font-weight: bold;
+    }
+
+    /* Estilo para los roles de los usuarios */
+    .status {
+        font-style: italic;
+    }
+
+
+

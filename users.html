@@ -40,9 +40,86 @@
                 <li><a href="/admin">Admin</a></li>
             </ul>
         </div>
+        <!---->
         <main>
-            <input type="text">
+            <input type="text" id="searchInput" placeholder="Search by name">
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Profile</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <pre id="text-content"></pre>
+                </tbody>
+            </table>
+            <script>
+                // Función para cargar el archivo de texto
+                function cargarArchivoTexto() {
+                    // Ruta del archivo de texto
+                    var archivo = "usuarios.txt";
+                    // Realizar una solicitud para cargar el archivo
+                    var solicitud = new XMLHttpRequest();
+                    solicitud.open("GET", archivo, true);
+                    solicitud.send();
+
+                    solicitud.onreadystatechange = function () {
+                        if (solicitud.readyState === 4 && solicitud.status === 200) {
+                            var contenido = solicitud.responseText;
+                            var usuarios = contenido.split('\n'); // Dividir el contenido en usuarios
+
+                            // Mostrar los usuarios en la tabla
+                            mostrarUsuarios(usuarios);
+                        }
+                    };
+                }
+                // Función para mostrar los usuarios en la tabla
+                function mostrarUsuarios(usuarios) {
+                    var userTable = document.getElementById("userTable").getElementsByTagName('tbody')[0];
+
+                    // Limpiar la tabla antes de mostrar usuarios
+                    userTable.innerHTML = '';
+
+                    usuarios.forEach(function (usuario) {
+                        var datos = usuario.split(' - ');
+                        var nombre = datos[0];
+                        var rol = datos[1];
+
+                        var newRow = userTable.insertRow(userTable.rows.length);
+                        var cell1 = newRow.insertCell(0);
+                        cell1.textContent = nombre;
+                        var cell2 = newRow.insertCell(1);
+                        cell2.innerHTML = '<img src="https://cdn.icon-icons.com/icons2/3246/PNG/512/face_flushed_icon_198442.png" />';
+                        var cell3 = newRow.insertCell(2);
+                        cell3.textContent = rol;
+                    });
+                }
+                // Llama a la función para cargar el archivo de texto cuando se carga la página
+                cargarArchivoTexto();
+                
+                const searchInput = document.getElementById("searchInput");
+                const userTable = document.getElementById("userTable");
+
+                searchInput.addEventListener("input", () => {
+                    const searchTerm = searchInput.value.trim().toLowerCase();
+                    const users = userTable.querySelectorAll("tbody tr");
+
+                    users.forEach((user) => {
+                        const nombre = user.cells[0].textContent.toLowerCase();
+
+                        // Verifica si la primera letra coincide y si el nombre contiene la búsqueda
+                        if (nombre.startsWith(searchTerm) || nombre.includes(searchTerm)) {
+                            user.style.display = "table-row";
+                        } else {
+                            user.style.display = "none";
+                        }
+                    });
+                });
+            </script>
         </main>
+        <!---->
         <footer>
             <a href="/privacy">Privacy Police</a>
             <a href="/terms">Terms of Service</a>
