@@ -1,5 +1,4 @@
 .user {
-    border: 2px solid black;
     padding: 20px;
     display: grid;
     gap: 10px;
@@ -65,6 +64,7 @@
     border-top-right-radius: 5px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .user-tabs ul li.active {
     border-bottom: 1px solid aliceblue;

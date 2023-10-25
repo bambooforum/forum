@@ -42,23 +42,29 @@
         </div>
         <main>
             <form action="/api/user/edit.php" method="POST">
-                <div>
-                    <label for="username">Username: </label>
-                    <input type="text" name="username" id="username" value="maria" placeholder="username">
+                <div class="part1">
+                    <div>
+                        <div class="perfil-image">
+                            <img id="preview" src="#" alt="Vista prèvia de la imatge de perfil">
+                        </div>
+                        <label for="imagen">Imatge de Perfil:</label>
+                        <input type="file" id="img" name="imagen" accept="image/*">
+                    </div>
                 </div>
-                
-                <div>
-                    <label for="imagen">Imatge de Perfil:</label>
-                    <input type="file" name="imagen" accept="image/*">
+                <div class="part2">
+                    <div>
+                        <div>
+                            <label for="username">Username: </label>
+                            <input type="text" name="username" id="username" value="Wartortle" placeholder="username">
+                        </div>
+                        <div class="description">
+                            <label for="description">Description: </label>
+                            <textarea name="description" id="description" placeholder="M'agrada cantar..."></textarea>
+                        </div>
+                    </div>
                 </div>
-
-                <div>
-                    <label for="description">Username: </label>
-                    <input type="textarea" name="description" id="description" placeholder="Magrada cantar...">
-                </div>
-
                 <div class="save">
-                    <input type="submit" value="Save">
+                    <button type="submit" disabled>Save</button>
                 </div>
             </form>
         </main>
@@ -67,5 +73,6 @@
             <a href="/terms">Terms of Service</a>
         </footer>
     </div>
+    <script src="/assets/js/edituser.js"></script>
 </body>
 </html>
