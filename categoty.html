@@ -6,7 +6,7 @@
     <title>FORUM</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="thread.css">
+    <link rel="stylesheet" href="category.css">
 </head>
 <body>
     <div id="app">
@@ -40,14 +40,17 @@
                 <li><a href="/admin">Admin</a></li>
             </ul>
         </div>
-        <main>                        
+        <main>
+            
             <ul>
                 <li category-id="1" class="category">
                     <div>
-                        <h2 href="./thread.html">News - Noticias y actualizaciones</h2>
-                    
+                        <h2>
+                            <button class="desplegable"></button>
+                            <a href="./thread.html">News - Noticias y actualizaciones</a>
+                        </h2>
                     </div>
-                    <ul style="display: block" id="threadList">
+                    <ul style="display: block;">
                       <li thread-id="1112" class="thread" creator="Pedro">
                         <h3>
                            <a class="titulo-thread" href="/">Nueva actualizacion</a> 
@@ -62,76 +65,105 @@
                         <td class="header">Lorem Ipsum</td>
                       </li>
                                          
+                      <li thread-id="1114" class="thread" creator="Paula">
+                        <h3>
+                           <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
+                        </h3>
+                        <td class="header">Lorem Ipsum</td>
+                      </li>
+                      
+                    </ul>
+                </li>
+
+                <li category-id="2" class="category">
+                    <div>
+                        <h2>
+                            <button class="desplegable"></button>
+                            <a href="/">Monturas</a>
+                        </h2>
+                    </div>
+                    <ul>
+                      <li thread-id="1115" class="thread" creator="Pedro">
+                        <h3>
+                           <a class="titulo-thread" href="/">Lorem Ipsum</a> 
+                        </h3>
+                        <td class="header">Lorem Ipsum</td>
+                      </li>
+                                         
+                      <li thread-id="1116" class="thread" creator="Pablo">
+                        <h3>
+                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
+                        </h3>
+                        <td class="header">Lorem Ipsum</td>
+                      </li>
+                                         
+                      <li thread-id="1117" class="thread" creator="Paula">
+                        <h3>
+                           <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
+                        </h3>
+                        <td class="header">Lorem Ipsum</td>
+                      </li>
+                      
+                    </ul>
+                </li>
+
+                <li category-id="3" class="category">
+                    <div>
+                        <h2>
+                            <button class="desplegable"></button>
+                            <a href="/">Herreria</a>
+                        </h2>
+                    </div>
+                    <ul>
+                      <li thread-id="1118" class="thread" creator="Pedro">
+                        <h3>
+                           <a class="titulo-thread" href="/">Lorem Ipsum</a> 
+                        </h3>
+                        <td class="header">Lorem Ipsum</td>
+                      </li>
+                                         
+                      <li thread-id="1119" class="thread" creator="Pablo">
+                        <h3>
+                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
+                        </h3>
+                        <td class="header">Lorem Ipsum</td>
+                      </li>
+                                         
                       <li thread-id="1120" class="thread" creator="Paula">
                         <h3>
                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
                         </h3>
                         <td class="header">Lorem Ipsum</td>
                       </li>
-                      <li thread-id="1123" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                                         
-                      <li thread-id="1140" class="thread" creator="Paula">
-                        <h3>
-                           <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                      <li thread-id="1143" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                                         
-                      <li thread-id="1144" class="thread" creator="Paula">
-                        <h3>
-                           <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                      <li thread-id="1152" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                                         
-                      <li thread-id="1157" class="thread" creator="Paula">
-                        <h3>
-                           <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                      <li thread-id="1159" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                      <li thread-id="1163" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>                                                             
+                      
                     </ul>
                 </li>
             </ul>
-    
+            
+            
         </main>
-        
         <footer>
             <a href="/privacy">Privacy Police</a>
             <a href="/terms">Terms of Service</a>
         </footer>
     </div>
 
-  
+    <script>
+     var buttons = document.querySelectorAll(".desplegable");
 
+        buttons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                var list = this.parentElement.parentElement.parentElement.querySelector("ul");
+                if (list.style.display === "none" || list.style.display === "") {
+                    list.style.display = "block"; 
+                    button.style="transform: rotate(0deg)";
+                } else {
+                    list.style.display = "none";
+                    button.style="transform: rotate(-90deg)";
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>
