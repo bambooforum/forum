@@ -43,17 +43,6 @@ form > div > div {
     height: 100%;
     object-fit: cover; /* Asegura que la imatge s'ajusti dins del cercle sense deformar-la */
 }
-/* 
-#username {
-    width: 343px;
-    margin: auto;
-}
-
-#description {
-    height: 143px;
-    width: 343px;
-    margin: auto;
-} */
 
 .save {
     grid-column: 1 / 3;
@@ -61,4 +50,16 @@ form > div > div {
 .save button {
     
     min-width: 100px;
+}
+
+@media only screen and (max-width: 600px){
+    form {
+        column-gap: 0px;
+        grid-template-rows: 1fr 1fr 1fr;
+        display: block;
+    }
+
+    .part1, .part2, .save {
+        margin: 10px;
+    }
 }

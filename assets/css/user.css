@@ -36,6 +36,10 @@
     padding: 5px;
     border-radius: 5px;
 }
+.part2 .editbtn a {
+    text-decoration: none;
+    color: inherit;
+}
 .part2 h2 {
     text-align: center;
 }
@@ -74,5 +78,31 @@
   
 }
 .user-info {
-    border-top: 1px solid black;
+    /*border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;*/
+    border: 1px solid black;
+    border-radius: 5px;
+    min-height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .user {
+        padding: 20px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 250px;
+    }
+    .part2 .editbtn {
+        position: relative;
+        top: 5px;
+        right: 5px;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 10px;
+        text-align: center;
+    }
 }

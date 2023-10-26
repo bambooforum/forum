@@ -12,6 +12,15 @@ document.getElementById('img').addEventListener('change', function() {
 
     reader.readAsDataURL(file);
 });
+/* 
+const file = this.files[0];
+Es crea una variable "file" que emmagatzema la primera imatge 
+seleccionada pel camp d'entrada de tipus "file" ("this" fa referència a l'element amb l'ID "img"). 
+Això permet accedir al fitxer seleccionat per l'usuari.
+
+FileReader, objecte que es fa servir per llegir el contingut del fitxer seleccionat.
+*/
+
 /**
  * @type {HTMLButtonElement}
  */
@@ -24,11 +33,3 @@ for(const element of document.querySelector('form').querySelectorAll('input, tex
     });
     element.dispatchEvent(new Event('input'))
 }
-/* 
-const file = this.files[0];
-Es crea una variable "file" que emmagatzema la primera imatge 
-seleccionada pel camp d'entrada de tipus "file" ("this" fa referència a l'element amb l'ID "img"). 
-Això permet accedir al fitxer seleccionat per l'usuari.
-
-FileReader, objecte que es fa servir per llegir el contingut del fitxer seleccionat.
-*/
