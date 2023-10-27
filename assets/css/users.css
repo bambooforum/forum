@@ -1,0 +1,48 @@
+.user-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; 
+    list-style: none;
+}
+
+.user-list li {
+    list-style: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    background-color: white; /* Fondo gris claro */
+    border: 3px solid #8C241B; /* Borde rojo oscuro */
+    border-radius: 5px;
+    padding: 10px; /* Espacio interior */
+    margin-bottom: 10px; /* Espacio entre usuarios */
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #8C241B; /* Borde rojo oscuro para la imagen */
+    border-radius: 50%; /* Para lograr una imagen redonda */
+}
+
+.user-details {
+    flex: 1;
+    padding-left: 10px; /* Espacio a la izquierda de los detalles del usuario */
+}
+
+h2 {
+    font-size: 1.4em; /* Fuente grande para el nombre del usuario */
+    margin-bottom: 5px; /* Espacio inferior entre el nombre y el resto de detalles */
+    color: #260101; /* Color de texto verde oscuro */
+}
+
+h3 {
+    color: #104021;
+}
+p {
+    margin: 0;
+    color: black; /* Color de texto rojo oscuro */
+}
+
+
