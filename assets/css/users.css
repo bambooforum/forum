@@ -12,37 +12,110 @@
 .user-info {
     display: flex;
     align-items: center;
-    background-color: white; /* Fondo gris claro */
-    border: 3px solid #8C241B; /* Borde rojo oscuro */
+    background-color: white; 
+    border: 3px solid #8C241B;
     border-radius: 5px;
-    padding: 10px; /* Espacio interior */
-    margin-bottom: 10px; /* Espacio entre usuarios */
+    padding: 10px; 
+    margin-bottom: 10px; 
 }
 
 .user-image {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #8C241B; /* Borde rojo oscuro para la imagen */
-    border-radius: 50%; /* Para lograr una imagen redonda */
+    width: 90px;
+    height: 90px;
+    border: 1px solid #8C241B;
 }
 
 .user-details {
     flex: 1;
-    padding-left: 10px; /* Espacio a la izquierda de los detalles del usuario */
+    padding-left: 5%; 
 }
 
 h2 {
-    font-size: 1.4em; /* Fuente grande para el nombre del usuario */
-    margin-bottom: 5px; /* Espacio inferior entre el nombre y el resto de detalles */
-    color: #260101; /* Color de texto verde oscuro */
+    font-size: 100%; 
+    margin: 0;
+    padding-bottom: 3%;
+    color: #260101;
+}
+
+h3 {
+    padding-bottom: 8%;
+    margin: 0;
+    font-size: 80%; 
+    color: #104021;
+}
+p {
+    margin: 0;
+    font-size: 50%; 
+    color: black; 
+}
+
+@media only screen and (max-width: 600px) {
+    .user-info {
+        display: block; 
+        border: 3px solid #8C241B;
+        margin-bottom: 20px; 
+    }
+
+    .user-image {
+        width: 100%; 
+        height: auto; 
+        border: 1px solid #8C241B;
+    }
+    .user-details {
+        padding-top: 5%;
+    }
+}
+
+/*
+.user-info {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 3px solid #8C241B;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.user-image {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #8C241B;
+}
+
+.user-details {
+    flex: 1;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    color: #260101;
 }
 
 h3 {
     color: #104021;
 }
+
 p {
     margin: 0;
-    color: black; /* Color de texto rojo oscuro */
+    color: black;
 }
+
+@media only screen and (max-width: 600px) {
+    .user-info {
+        display: block;
+        border: 3px solid #8C241B;
+        margin-bottom: 20px;
+    }
+
+    .user-image {
+        width: 90px;
+        height: 90px;
+        border: 1px solid #8C241B;
+    }
+}
+*/
 
 
