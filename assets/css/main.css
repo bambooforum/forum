@@ -74,10 +74,11 @@ footer a {
 
 /** content **/
 
-main h1, main h2 {
+main h1 {
     text-align: center;
     margin: 10px auto;
     max-width: 600px;
+    margin-top: 5px;
 }
 
 /** pagination **/
