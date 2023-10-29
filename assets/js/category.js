@@ -14,25 +14,21 @@ pagination((li, data) => {
         return parent;
     }
 
-    const post = create('div', ['post']);
+    const thread = create('div', ['thread']);
+    thread.setAttribute('data-author', 'author');
+    thread.setAttribute('data-id', data?.id ?? 1);
 
-    const user = create('div', ['post-user']);
-    const username = create('span', ['post-username']);
-    const image = create('img', ['post-image']);
+    const title = create('h3', []);
+    const titlelink = create('a', ['titulo-thread']);
+    titlelink.textContent = 'Thread title';
+    titlelink.href = '/thread.html';
+    // const authorimage = create('img', [])
+    const smalltext = create('span', []);
+    smalltext.textContent = 'lorem ipsum diem sit amet.'
 
-    const main = create('div', ['post-main']);
-    const content = create('div', ['post-content']);
-    const extra = create('div', ['post-extra']);
-    const signature = create('div', ['post-signature']);
-    const likes = create('div', ['post-likes']);
-
-    username.textContent = 'Username';
-    image.href = '#';
-    image.alt = 'pfp'
-
-    li.appendChild(append(post, [
-        append(user, [username, image]),
-        append(main, [content, append(extra, [signature, likes])])
+    li.appendChild(append(thread, [
+        append(title, [titlelink]),
+        smalltext
     ]))
     return li;
 });

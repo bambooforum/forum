@@ -1,37 +1,17 @@
-.category,
 .thread {
   border: 1px solid #000; 
   padding: 10px; 
   border-radius: 5px;
-  margin: 10px; 
 }
-.category,
-.desplegable {
-  background-color: #D9D6d0; 
-  
-} 
-h2{
-  font-size: 30px;
+h3 {
+  margin: 0;
 }
-h2, h3{
-  margin: 0px;
-  padding: 5px;
-}
-
-h3{
-  margin-left: -4px;
-}
-
 .thread {
   display: flex;
   flex-direction: column;
   background-color: #ffffff; 
 
 }
-
-ul, ol {
-    list-style: none;
-  }
 
 a {
   color: inherit;
