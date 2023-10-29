@@ -6,7 +6,9 @@
     <title>FORUM</title>
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/category.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+
+    <script src="/assets/js/index.js" defer></script>
 </head>
 <body>
     <div id="app">
@@ -49,7 +51,7 @@
                             <a href="./category.html">News - Noticias y actualizaciones</a>
                         </h2>
                     </div>
-                    <ul style="display: block;">
+                    <ul>
                       <li thread-id="1112" class="thread" creator="Pedro">
                         <h3>
                            <a class="titulo-thread" href="/">Nueva actualizacion</a> 
@@ -139,28 +141,6 @@
                 </li>
             </ul>
         </main>
-        <footer>
-            <a href="/privacy">Privacy Police</a>
-            <a href="/terms">Terms of Service</a>
-        </footer>
-    </div>
-
-    <script>
-     var buttons = document.querySelectorAll(".desplegable");
-
-        buttons.forEach(function(button) {
-            button.addEventListener("click", function() {
-                var list = this.parentElement.parentElement.parentElement.querySelector("ul");
-                if (list.style.display === "none" || list.style.display === "") {
-                    list.style.display = "block"; 
-                    button.style="transform: rotate(0deg)";
-                } else {
-                    list.style.display = "none";
-                    button.style="transform: rotate(-90deg)";
-                }
-            });
-        });
-    </script>
         <footer>
             <a href="/privacy">Privacy Police</a>
             <a href="/terms">Terms of Service</a>
