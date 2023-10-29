@@ -1,6 +1,18 @@
+:root {
+    --bg-color: aliceblue;
+    --border-color: rgb(50, 207, 255);
+    --primary-color: rgb(156, 235, 255);
+    --secondary-color: rgb(217, 244, 255);
+    --text-color: black;
+    --hard-text-color: white;
+    --hard-color: black;
+}
+
 body {
-    background-color: aliceblue;
+    padding-top: 5px;
+    background-color: var(--bg-color);
     margin: 0;
+    color: var(--text-color)
 }
 #app {
     width: 100%;
@@ -14,13 +26,15 @@ header {
     padding: 10px;
     align-items: center;
     height: 80px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
 }
 header h1 {
     margin: 0;
 }
 .route {
-    height: 50px;
-    padding: 10px;
+    font-family: monospace, Consolas;
+    padding: 0 5px;
 }
 .main-tabs {
     margin-top: 20px;
@@ -38,10 +52,13 @@ header h1 {
     height: 100%;
     margin: 0 5px;
     min-width: 80px;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-bottom: inherit;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+.main-tabs ul li.active {
+    border-bottom: var(--bg-color) 1px solid;
 }
 .main-tabs ul li a {
     text-decoration: inherit;
@@ -53,19 +70,19 @@ header h1 {
     align-items: center;
 }
 main {
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 10px;
     border-radius: 5px;
 }
 footer {
     height: 80px;
-    background-color: black;
+    background-color: var(--hard-color);
     margin: 10px 0;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: var(--hard-text-color);
     padding: 0 40px;
 }
 footer a {
@@ -78,7 +95,7 @@ main h1 {
     text-align: center;
     margin: 10px auto;
     max-width: 600px;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 /** pagination **/
@@ -91,7 +108,7 @@ main .pagination-wrapper {
 main .pagination-wrapper ul.pagination-content {
     width: 100%;
     min-height: 100px;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 10px;
     border-radius: 5px;
     list-style-type: none;
@@ -110,7 +127,7 @@ main .pagination-wrapper .controls {
 }
 main .pagination-wrapper .controls > ul {
     display: flex;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     min-width: 50px;
     border-radius: 5px;
     list-style-type: none;

@@ -32,7 +32,7 @@
     position: absolute;
     top: 5px;
     right: 5px;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 5px;
     border-radius: 5px;
 }
@@ -63,7 +63,7 @@
     height: 100%;
     margin: 0 5px;
     min-width: 80px;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     justify-content: center;
@@ -71,17 +71,17 @@
     cursor: pointer;
 }
 .user-tabs ul li.active {
-    border-bottom: 1px solid aliceblue;
+    border-bottom: 1px solid var(--bg-color);
     z-index: 10;
     position: relative;
-    background-color: aliceblue;
+    background-color: var(--bg-color);
   
 }
 .user-info {
     /*border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;*/
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     min-height: 200px;
     padding-left: 10px;
@@ -99,7 +99,7 @@
         position: relative;
         top: 5px;
         right: 5px;
-        border: 1px solid black;
+        border: 1px solid var(--border-color);
         padding: 5px;
         border-radius: 5px;
         margin: 10px;
