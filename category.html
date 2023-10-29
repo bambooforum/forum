@@ -1,137 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORUM</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/category.css">
-    <script src="/assets/js/pagination.js" defer></script>
-    <script src="/assets/js/category.js" defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FORUM</title>
+	<link rel="stylesheet" href="/assets/css/reset.css">
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/category.css">
+	<script src="/assets/js/pagination.js" defer></script>
+	<script src="/assets/js/category.js" defer></script>
 </head>
 <body>
-    <div id="app">
-        <header>
-            <div class="lang-wrapper">
-                <select name="lang" id="lang">
-                    <option value="ca" selected>cat</option>
-                    <option value="es">esp</option>
-                    <option value="en">eng</option>
-                </select>
-            </div>
-            <div class="title">
-                <h1>BambooForum</h1>
-            </div>
-            <div class="account">
-                <div class="nologin">
-                    <a href="/login">log in</a>
-                    <a href="/register">Sign up</a>
-                </div>
-                <div class="yeslogin" hidden>
-                    <img src="#" alt="pfp">
-                    <span class="username">username</span>
-                </div>
-            </div>
-        </header>
-        <div class="route"><span>/HOLA</span></div>
-        <div class="main-tabs">
-            <ul>
-                <li><a href="/">Forum</a></li>
-                <li><a href="/users">Users</a></li>
-                <li><a href="/admin">Admin</a></li>
-            </ul>
-        </div>
-        <main>                        
-            <ul>
-                <li category-id="1" class="category">
-                    <div>
-                        <h2 href="./thread.html">News - Noticias y actualizaciones</h2>
-                    
-                    </div>
-                    <ul style="display: block" id="threadList">
-                      <li thread-id="1112" class="thread" creator="Pedro">
-                        <h3>
-                           <a class="titulo-thread" href="/">Nueva actualizacion</a> 
-                        </h3>
-                        <td class="header">Mejoras de la actualizacion 13.19</td>
-                      </li>
-                                         
-                      <li thread-id="1113" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                                         
-                      <li thread-id="1120" class="thread" creator="Paula">
-                        <h3>
-                           <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                      <li thread-id="1123" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                                         
-                      <li thread-id="1140" class="thread" creator="Paula">
-                        <h3>
-                           <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                      <li thread-id="1143" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                                         
-                      <li thread-id="1144" class="thread" creator="Paula">
-                        <h3>
-                           <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                      <li thread-id="1152" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                                         
-                      <li thread-id="1157" class="thread" creator="Paula">
-                        <h3>
-                           <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                      <li thread-id="1159" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>
-                      <li thread-id="1163" class="thread" creator="Pablo">
-                        <h3>
-                            <a class="titulo-thread" href="/" >Lorem Ipsum</a> 
-                        </h3>
-                        <td class="header">Lorem Ipsum</td>
-                      </li>                                                             
-                    </ul>
-                </li>
-            </ul>
-    
-        </main>
-        
-        <footer>
-            <a href="/privacy">Privacy Police</a>
-            <a href="/terms">Terms of Service</a>
-        </footer>
-    </div>
+	<div id="app">
+		<header>
+			<div class="lang-wrapper">
+				<select name="lang" id="lang">
+					<option value="ca" selected>cat</option>
+					<option value="es">esp</option>
+					<option value="en">eng</option>
+				</select>
+			</div>
+			<div class="title">
+				<h1>BambooForum</h1>
+			</div>
+			<div class="account">
+				<div class="nologin">
+					<a href="/login">log in</a>
+					<a href="/register">Sign up</a>
+				</div>
+				<div class="yeslogin" hidden>
+					<img src="#" alt="pfp">
+					<span class="username">username</span>
+				</div>
+			</div>
+		</header>
+		<div class="route"><span>/HOLA</span></div>
+		<div class="main-tabs">
+			<ul>
+				<li><a href="/">Forum</a></li>
+				<li><a href="/users">Users</a></li>
+				<li><a href="/admin">Admin</a></li>
+			</ul>
+		</div>
+		<main>
+			<h2>Category</h2>
+			<div class="pagination-wrapper">
+			  <ul class="pagination-content">
+				  
+			  </ul>
+			  <div class="controls">
+					<ul class="pagination-controls">
+						<li><button id="pagination-control-start">&lt;&lt;</button></li>
+						<li><button id="pagination-control-previous">&lt;</button></li>
+						<li><button id="pagination-control-next">&gt;</button></li>
+					</ul>
+					<ul class="page-controls">
+						<li><button id="page-control-create-thread">create thread</button></li>
+					</ul>
+			  </div>
+		  </div>
+		</main>
+		
+		<footer>
+			<a href="/privacy">Privacy Police</a>
+			<a href="/terms">Terms of Service</a>
+		</footer>
+	</div>
  
 
 </body>
