@@ -1,6 +1,5 @@
 .category,
 .thread {
-	border: 1px solid #000; 
 	padding: 10px; 
 	border-radius: 5px;
 }
@@ -10,7 +9,7 @@
 
 .category,
 .desplegable {
-	background-color: #D9D6d0; 
+	background-color: var(--secondary-color); 
 } 
 h2{
 	font-size: 30px;
@@ -22,8 +21,7 @@ h2, h3{
 .thread {
 	display: flex;
 	flex-direction: column;
-	background-color: #ffffff; 
-
+	background-color: var(--bg-color);
 }
 
 main > ul {
