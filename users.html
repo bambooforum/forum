@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/users.css">
+
+    <script src="/assets/js/pagination.js" defer></script>
+    <script src="/assets/js/users.js" defer></script>
 </head>
 <body>
     <div id="app">
@@ -46,45 +49,20 @@
                 <button type="submit" class="search-button">
                     <img src="assets/img/lupa.png" alt="Botón de búsqueda">
                 </button>
-            </div>            
-            <ul class="user-list">
-                <li>
-                    <div class="user-info">
-                        <div class="user-image">
-                            <img class="img" src="assets/img/007.png" alt="img pokemon Squirtle"/>
-                        </div>
-                        <div class="user-details">
-                            <h2>Nom de l'usuari 1</h2>
-                            <h3>Administrador</h3>
-                            <p>Descripció de l'usuari</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="user-info">
-                        <div class="user-image">
-                            <img class="img" src="assets/img/008.png" alt="img pokemon Bulbasaur"/>
-                        </div>
-                        <div class="user-details">
-                            <h2>Nom de l'usuari 2</h2>
-                            <h3>Normi</h3>
-                            <p>Altra descripció de l'usuari</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="user-info">
-                        <div class="user-image">
-                            <img class="img" src="assets/img/009.png" alt="img pokemon Charmander"/>
-                        </div>
-                        <div class="user-details">
-                            <h2>Nom de l'usuari 3</h2>
-                            <h3>Administrador</h3>
-                            <p>Una altra descripció de l'usuari</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            </div>
+            <div class="pagination-wrapper">
+                <ul class="pagination-content pagination-content-double">
+                    
+                </ul>
+                <div class="controls">
+                    <ul class="pagination-controls">
+                        <li><button id="pagination-control-start">&lt;&lt;</button></li>
+                        <li><button id="pagination-control-previous">&lt;</button></li>
+                        <li><button id="pagination-control-next">&gt;</button></li>
+                    </ul>
+                    <ul class="page-controls"></ul>
+                </div>
+            </div>
         </main>
         <footer>
             <a href="/privacy">Privacy Police</a>

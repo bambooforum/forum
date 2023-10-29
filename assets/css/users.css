@@ -1,17 +1,13 @@
-/*main {
-    align-items: center;
-}*/
-
 .search-bar {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 50px;
     width: 100%;
     max-width: 300px;
-    margin-bottom: 20px;
     border: 2px solid #ccc;
     border-radius: 20px;
     overflow: hidden;
-    margin-left: 0%;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 #searchInput {
@@ -25,7 +21,9 @@
     background: none;
     border: none;
     cursor: pointer;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .search-button img {
@@ -36,18 +34,6 @@
     border-left: 2px solid 0;
 }
 
-
-.user-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px; 
-    list-style: none;
-}
-
-.user-list li {
-    list-style: none;
-}
-
 .user-info {
     display: flex;
     align-items: center;
@@ -55,7 +41,9 @@
     border: 3px solid #8C241B;
     border-radius: 5px;
     padding: 10px; 
-    margin-bottom: 10px; 
+    margin: auto;
+    
+    max-width: 580px;
 }
 
 .user-image {
@@ -67,6 +55,17 @@
 .user-details {
     flex: 1;
     padding-left: 5%; 
+}
+
+.user-details > * {
+    display: block;
+}
+.user-details .user-name {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.user-details .user-role {
+    text-transform: capitalize;
 }
 
 h2 {
@@ -87,7 +86,7 @@ p {
     font-size: 50%; 
     color: black; 
 }
-
+/* 
 @media only screen and (max-width: 600px) {
     .search-bar {
         grid-template-columns: 1fr; 
@@ -107,4 +106,4 @@ p {
     .user-details {
         padding-top: 5%;
     }
-}
+} */

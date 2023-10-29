@@ -31,14 +31,14 @@ async function pagination (renderer) {
             if(loading) return;
             loading = true;
 
-            const next = actual + shown;
+            const next = id === 'start' ? 1 : id === 'next' ? actual + shown : (actual - shown) < 1 ? 1 : (actual - shown);
             const stop = next + shown - 1;
             
             const query = `?start=${next}&stop=${stop}`;
 
             // do the api call
-            const res = new Array(shown).fill({});
-
+            const res = (new Array(shown).fill(0)).map((v, i) => ({index: (i + next)}));
+            console.log(res)
             // render
             clear();
             for(const data of res) {
