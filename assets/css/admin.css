@@ -1,0 +1,31 @@
+main button {
+    margin: 0 2px;
+    height: 2em;
+    padding: .5em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+main h2 button {
+    font-size: initial;
+}
+main li {
+    margin: 2px 0;
+}
+main span {
+    display: inline-block;
+}
+main ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+main li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+}
