@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 50px;
     width: 100%;
     max-width: 300px;
-    border: 2px solid #ccc;
+    border: 2px solid var(--border-color);
     border-radius: 20px;
     overflow: hidden;
     margin: auto;
@@ -24,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--secondary-color);
 }
 
 .search-button img {
@@ -38,7 +39,7 @@
     display: flex;
     align-items: center;
     background-color: white; 
-    border: 3px solid #8C241B;
+    border: 2px solid var(--border-color);
     border-radius: 5px;
     padding: 10px; 
     margin: auto;
@@ -49,7 +50,7 @@
 .user-image {
     width: 90px;
     height: 90px;
-    border: 1px solid #8C241B;
+    border-radius: 5px;
 }
 
 .user-details {

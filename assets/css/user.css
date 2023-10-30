@@ -7,9 +7,13 @@
 
 .part1 {
     text-align: center;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
 }
 
-.part1 h2 {
+.part1 h2, .part2 h2 {
     margin: 0;
 }
 
@@ -30,8 +34,8 @@
 }
 .part2 .editbtn {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0;
+    right: 0;
     border: 1px solid var(--border-color);
     padding: 5px;
     border-radius: 5px;
@@ -78,9 +82,6 @@
   
 }
 .user-info {
-    /*border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;*/
     border: 1px solid var(--border-color);
     border-radius: 5px;
     min-height: 200px;
@@ -93,12 +94,12 @@
         padding: 20px;
         display: grid;
         gap: 10px;
-        grid-template-columns: 250px;
+        grid-template-columns: 1fr;
     }
     .part2 .editbtn {
-        position: relative;
-        top: 5px;
-        right: 5px;
+        position: inherit;
+        top: inherit;
+        right: inherit;
         border: 1px solid var(--border-color);
         padding: 5px;
         border-radius: 5px;

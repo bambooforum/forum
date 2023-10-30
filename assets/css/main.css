@@ -1,8 +1,11 @@
 :root {
     --bg-color: aliceblue;
-    --border-color: rgb(50, 207, 255);
     --primary-color: rgb(156, 235, 255);
     --secondary-color: rgb(217, 244, 255);
+    --darker-secondary-color: #80dbff;
+    --accent-color: #4285f4;
+    --darker-accent-color: #125acc;
+    --border-color: var(--accent-color);
     --text-color: black;
     --hard-text-color: white;
     --hard-color: black;
@@ -87,6 +90,40 @@ footer {
 }
 footer a {
     color: inherit;
+}
+
+
+.primarybtn {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+    text-decoration: inherit;
+}
+
+.primarybtn:hover {
+    background-color: var(--darker-accent-color);
+}
+
+.secondarybtn {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 10px;
+    border: none;
+    border: 1px solid;
+    border-color: var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+    text-decoration: inherit;
+}
+
+.secondarybtn:hover {
+    background-color: var(--accent-color);
+    color: white;
 }
 
 /** content **/
