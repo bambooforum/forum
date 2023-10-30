@@ -6,25 +6,8 @@
     <title>FORUM</title>
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <style>
-        button {
-            margin: 0 2px;
-            height: 2em;
-            padding: .5em;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-        }
-        h2 button {
-            font-size: initial;
-        }
-        li {
-            margin: 2px 0;
-        }
-        span {
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <script src="/assets/js/admin.js" defer></script>
 </head>
 <body>
     <div id="app">
@@ -62,9 +45,9 @@
             <h1>Admin</h1>
             <h2>Manage categories <button class="primarybtn">add</button></h2> 
             <ul id="categories">
-                <li><span class="item-name">News - Noticias y actualizaciones</span><button class="secondarybtn">edit</button><button class="dangerbtn">remove</button></li>
-                <li><span class="item-name">Monturas</span><button class="secondarybtn">edit</button><button class="dangerbtn">remove</button></li>
-                <li><span class="item-name">Herreria</span><button class="secondarybtn">edit</button><button class="dangerbtn">remove</button></li>
+                <li><span class="item-name">News - Noticias y actualizaciones</span><div><button class="secondarybtn">edit</button><button class="dangerbtn">remove</button></div></li>
+                <li><span class="item-name">Monturas</span><div><button class="secondarybtn">edit</button><button class="dangerbtn">remove</button></div></li>
+                <li><span class="item-name">Herreria</span><div><button class="secondarybtn">edit</button><button class="dangerbtn">remove</button></div></li>
             </ul>
         </main>
         <footer>
@@ -72,70 +55,5 @@
             <a href="/terms">Terms of Service</a>
         </footer>
     </div>
-    
-    <script>
-        const editbtns = document.querySelector('#categories').querySelectorAll('.secondarybtn');
-        const editfn = event => {
-                const container = event.target.parentElement;
-                const text = container.querySelector('span.item-name');
-                const input = document.createElement('input');
-                input.value = text.textContent;
-                const savebtn = document.createElement('button');
-                savebtn.textContent = 'save';
-                savebtn.classList.add('secondarybtn');
-                for(const el of container.querySelectorAll('button, span, input')) {
-                    el.style.display = 'none';
-                }
-                container.appendChild(input);
-                container.appendChild(savebtn);
-
-                savebtn.addEventListener('click', () => {
-                    text.textContent = input.value;
-                    input.remove();
-                    savebtn.remove();
-                    for(const el of container.querySelectorAll('button, span, input')) {
-                        el.style.display = '';
-                    }
-                })
-            }
-        for(const btn of editbtns) {
-            btn.addEventListener('click', editfn);
-        }
-
-        const delbtn = document.querySelector('#categories').querySelectorAll('.dangerbtn');
-        const delfn = event => {
-                const container = event.target.parentElement;
-                console.log(container)
-                container.remove();
-            }
-        for(const btn of delbtn) {
-            btn.addEventListener('click', delfn);
-        }
-
-        const add = document.querySelector('h2 button');
-
-        add.addEventListener('click', () => {
-            const categories = document.querySelector('#categories');
-            const li = document.createElement('li');
-            const span = document.createElement('span');
-            span.classList.add('item-name');
-            span.textContent = 'New category';
-            const edit = document.createElement('button');
-            const del = document.createElement('button');
-            edit.textContent = 'edit';
-            del.textContent = 'remove';
-
-            edit.classList.add('secondarybtn');
-            del.classList.add('dangerbtn');
-
-            categories.appendChild(li);
-            li.appendChild(span);
-            li.appendChild(edit);
-            li.appendChild(del);
-            edit.addEventListener('click', editfn);
-            del.addEventListener('click', delfn)
-            edit.dispatchEvent(new Event('click'))
-        })
-    </script>
 </body>
 </html>
