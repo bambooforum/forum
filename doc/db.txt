@@ -1,0 +1,47 @@
+CREATE TABLE users (
+	id int NOT NULL AUTO_INCREMENT,
+	username varchar(20) NOT NULL,
+	description varchar(150),
+	admin boolean NOT NULL DEFAULT 0,
+	salt varchar(300) NOT NULL,
+	hash varchar(300) NOT NULL,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	last_mod DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	signature varchar(100),
+    UNIQUE(id),
+    UNIQUE(username),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE threads (
+	id int NOT NULL AUTO_INCREMENT,
+	author_id int NOT NULL,
+	title varchar(50),
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	category_id int NOT NULL,
+    UNIQUE(id),
+    FOREIGN KEY (author_id) REFERENCES users(id),
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE posts (
+	id int NOT NULL AUTO_INCREMENT,
+	author_id int NOT NULL,
+	text varchar(500) NOT NULL,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	thread_id int NOT NULL,
+    UNIQUE(id),
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (author_id) REFERENCES threads(id),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE categories (
+	id int NOT NULL AUTO_INCREMENT,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	last_mod DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	title varchar(20),
+    UNIQUE(id),
+    PRIMARY KEY (id)
+)
