@@ -33,7 +33,7 @@ CREATE TABLE posts (
 	thread_id int NOT NULL,
     UNIQUE(id),
     FOREIGN KEY (thread_id) REFERENCES threads(id),
-    FOREIGN KEY (author_id) REFERENCES threads(id),
+    FOREIGN KEY (author_id) REFERENCES users(id),
     PRIMARY KEY (id)
 );
 

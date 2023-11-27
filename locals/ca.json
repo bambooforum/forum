@@ -1,0 +1,69 @@
+{
+    "header": {
+        "login": "Entrar",
+        "register": "Registrar-se",
+        "edit": "Editar perfil",
+        "logout": "Sortir"
+    },
+    "tabs": {
+        "forum": "Forum",
+        "users": "Usuaris",
+        "admin": "Administrador"
+    },
+    "users": {
+        "title": "Usuaris"
+    },
+    "user": {
+        "title": "Informació",
+        "about_me": "Sobre mi",
+        "post": "Publicacions",
+        "day": "Dia d'unió: ",
+        "num_posts": "Publicacions: ",
+        "edit": "Edita!"
+    },
+    "edituser": {
+        "title": "Edita l'usuari",
+        "img": "Imatge de Perfil: ",
+        "alt_img": "Vista prèvia de la imatge de perfil",
+        "username": "Nom d'usuari: ",
+        "description": "Descripció: ",
+        "signature": "Signatura: ",
+        "save": "Guardar"
+    },
+    "createthread": {
+        "title": "Crear fil",
+        "thread": "Titol:",
+        "category": "Categoria:",
+        "post": "Primera publicació: ",
+        "submit": "Envia"
+    },
+    "thread": {
+        "banner": "No hi ha contingut per enviar"
+    },
+    "popup": {
+        "textarea": "Escriviu la vostra resposta aquí...",
+        "btn": "Envia",
+        "btn_cancel": "Cancel·lar"
+    },
+    "login": {
+        "title": "Inicia Sessió",
+        "username": "Nom d'usuari",
+        "passwd": "Contrasenya",
+        "btn": "Inicia Sessió",
+        "link": "No tens un compte?",
+        "register": "Registrat"
+    },
+    "register": {
+        "title": "Registrar-se",
+        "username": "Nom d'usuari",
+        "pass": "Contrasenya",
+        "pass2": "Repeteix la contrasenya",
+        "btn": "Registrat",
+        "link": "Ja tens un compte? ",
+        "login": "Inicia Sessió"
+    },
+    "footer": {
+        "privacy": "Política de privacitat",
+        "terms": "Condicions del servei"
+    }
+}

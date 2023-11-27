@@ -1,0 +1,69 @@
+{
+    "header": {
+      "login": "Anmelden",
+      "register": "Registrieren",
+      "edit": "Profil bearbeiten",
+      "logout": "Abmelden"
+    },
+    "tabs": {
+        "forum": "Forum",
+        "users": "Benutzer",
+        "admin": "Admin"
+    },
+    "users": {
+        "title": "Benutzer"
+    },
+    "user": {
+        "title": "Informationen",
+        "about_me": "Über mich",
+        "post": "Beiträge",
+        "day": "Beigtreten am: ",
+        "num_posts": "Beiträge: ",
+        "edit": "Bearbeiten!"
+    },
+    "edituser": {
+        "title": "Benutzer bearbeiten",
+        "img": "Profilbild: ",
+        "alt_img": "Vorherige Ansicht des Profilbildes",
+        "username": "Benutzername: ",
+        "description": "Beschreibung: ",
+        "signature": "Unterschrift: ",
+        "save": "Speichern"
+    },
+    "createthread": {
+        "title": "Neuer Thread: ",
+        "thread": "Titel: ",
+        "category": "Kategorie: ",
+        "post": "Erster Beitrag: ",
+        "submit": "Absenden"
+    },
+    "thread": {
+        "banner": "Es gibt keinen Inhalt zu senden"
+    },
+    "popup": {
+        "textarea": "Geben Sie hier Ihre Antwort ein...",
+        "btn": "Senden",
+        "btn_cancel": "Abbrechen"
+    },
+    "login": {
+        "title": "Anmeldung",
+        "username": "Benutzername",
+        "passwd": "Kennwort",
+        "btn": "Anmelden",
+        "link": "Sie haben noch kein Konto?",
+        "register": "Registrieren"
+    },
+    "register": {
+        "title": "Anmeldung",
+        "username": "Benutzername",
+        "pass": "Kennwort",
+        "pass2": "Kennwort wiederholen",
+        "btn": "Konto registrieren",
+        "link": "Haben Sie bereits ein Konto? ",
+        "login": "Anmelden"
+    },
+    "footer": {
+        "privacy": "Datenschutzrichtlinie",
+        "terms": "Nutzungsbedingungen"
+    }
+}

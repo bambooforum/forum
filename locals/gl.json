@@ -1,0 +1,69 @@
+{
+    "header": {
+        "login": "Entrar",
+        "register": "Rexistrarse",
+        "edit": "Editar perfil",
+        "logout": "Sair" 
+    },
+    "tabs": {
+        "forum": "Foro",
+        "users": "Usuarios",
+        "admin": "Administrador"
+    },
+    "users": {
+        "title": "Usuarios"
+    },
+    "user": {
+        "title": "Información",
+        "about_me": "Sobre min",
+        "post": "Publicacións",
+        "day": "Día da unión: ",
+        "num_posts": "Publicacións: ",
+        "edit": "Editar!"
+    },
+    "edituser": {
+        "title": "Editar o usuario",
+        "img": "Imaxe do Perfil: ",
+        "alt_img": "Vista previa da imaxe de perfil",
+        "username": "Nome do Usuario: ",
+        "description": "Descripción: ",
+        "signature": "Sinatura: ",
+        "save": "Gardar"
+    },
+    "createthread": {
+        "title": "Crear fio",
+        "thread": "Título: ",
+        "category": "Categoría:",
+        "post": "Primeira publicación: ",
+        "submit": "Enviar"
+    },
+    "thread": {
+        "banner": "Non hai contenido para enviar"
+    },
+    "popup": {
+        "textarea": "Escribe a tua resposta aquí...",
+        "btn": "Enviar",
+        "btn_cancel": "Cancelar"
+    },
+    "login": {
+        "title": "Iniciar Sesión",
+        "username": "Nome do usuario",
+        "passwd": "Contrasinal",
+        "btn": "Iniciar Sesión",
+        "link": "Non tes unha conta?",
+        "register": "Rexistrate"
+    },
+    "register": {
+        "title": "Rexistrarse",
+        "username": "Nome do usuario",
+        "pass": "Contrasinal",
+        "pass2": "Repite o contrasinal",
+        "btn": "Rexistrate",
+        "link": "xa tes unha conta? ",
+        "login": "Iniciar Sesión"
+    },
+    "footer": {
+        "privacy": "Política de Privacidade",
+        "terms": "Termos de servizo"
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "header": {
+      "login": "Prisijungimas",
+      "register": "Užsiregistravimas",
+      "edit": "Profilio redagavimas",
+      "logout": "Atsijungimas"
+    },
+    "tabs": {
+        "forum": "Forumas",
+        "users": "Vartotojai",
+        "admin": "Administratorius"
+    },
+    "users": {
+        "title": "Vartotojai"
+    },
+    "user": {
+        "title": "Informacija",
+        "about_me": "Apie mane",
+        "post": "Postai",
+        "day": "narys nuo: ",
+        "num_posts": "Panešimai: ",
+        "edit": "Redagavimas"
+    },
+    "edituser": {
+        "title": "Redagavimas vartotojo:",
+        "img": "Vartotojo nuotrauka ",
+        "alt_img": "Buvusios nuotraukos peržiūra ",
+        "username": "Vartotojo vardas: ",
+        "description": "Aprašymas ",
+        "signature": "Parašas: ",
+        "save": "Išsugoti"
+    },
+    "createthread": {
+        "title": "Nauja tema ",
+        "thread": "Antraštė: ",
+        "category": "Kategorija: ",
+        "post": "Pirmas pranešimas: ",
+        "submit": "Pateikimas"
+    },
+    "thread": {
+        "banner": "Pranešimas negali būti tuščias."
+    },
+    "popup": {
+        "textarea": "Parašyk savo atsakyma čia",
+        "btn": "Siųsti",
+        "btn_cancel": "Atšaukti"
+    },
+    "login": {
+        "title": "Prisijungti",
+        "username": "Sapyvardis",
+        "passwd": "Saptažodis",
+        "btn": "Prisijungimas",
+        "link": "Neturite paskyros?",
+        "register": "Registracija"
+    },
+    "register": {
+        "title": "Registracija",
+        "username": "Vartotojo vardas",
+        "pass": "Slaptažodis",
+        "pass2": "Pakartok slaptažodį",
+        "btn": "Vartotojo registracimas",
+        "link": "Jei jau turi paskyrą? ",
+        "login": "Prisijungimas"
+    },
+    "footer": {
+        "privacy": "Privatumo politika",
+        "terms": "Paslaugų teikimo sąlygos"
+    }
+}

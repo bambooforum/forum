@@ -1,0 +1,69 @@
+{
+    "header": {
+      "login": "Log in",
+      "register": "Sign up",
+      "edit": "Edit profile",
+      "logout": "Log out"
+    },
+    "tabs": {
+        "forum": "Forum",
+        "users": "Users",
+        "admin": "Admin"
+    },
+    "users": {
+        "title": "Users"
+    },
+    "user": {
+        "title": "Information",
+        "about_me": "About me",
+        "post": "Posts",
+        "day": "Member since: ",
+        "num_posts": "Posts: ",
+        "edit": "Edit!"
+    },
+    "edituser": {
+        "title": "Edit user",
+        "img": "Profile image: ",
+        "alt_img": "Preview of profile image",
+        "username": "Username: ",
+        "description": "Description: ",
+        "signature": "Signature: ",
+        "save": "Save"
+    },
+    "createthread": {
+        "title": "New thread: ",
+        "thread": "Title: ",
+        "category": "Category: ",
+        "post": "First post: ",
+        "submit": "Submit"
+    },
+    "thread": {
+        "banner": "The post cannot be empty."
+    },
+    "popup": {
+        "textarea": "Type your reply here...",
+        "btn": "Send",
+        "btn_cancel": "Cancel"
+    },
+    "login": {
+        "title": "Login",
+        "username": "Username",
+        "passwd": "Password",
+        "btn": "Login",
+        "link": "Don't have an account?",
+        "register": "Sign up"
+    },
+    "register": {
+        "title": "Sign up",
+        "username": "Username",
+        "pass": "Password",
+        "pass2": "Repeat Password",
+        "btn": "Register Account",
+        "link": "Already have an account? ",
+        "login": "Login"
+    },
+    "footer": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+    }
+}
