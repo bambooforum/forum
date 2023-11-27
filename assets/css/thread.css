@@ -1,27 +1,34 @@
 li.pagination-content-item > .post {
     min-height: 100px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid var(--darker-secondary-color);
+    background-color: var(--bg-color);
     border-radius: 5px;
     display: grid;
     grid-template-columns: 250px 1fr;
 }
+
 li.pagination-content-item > .post > .post-user {
-    border-right: 1px solid black;
+    background-color: var(--secondary-color);
 }
+main .pagination-wrapper ul.pagination-content {
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
 li.pagination-content-item > .post > .post-user > .post-username {
     text-align: center;
+    text-decoration: none;
+    color: black;      
     display: block;
 }
 li.pagination-content-item > .post > .post-user > .post-image {
     width: 200px;
-    height: 100000000px; /* remove */
     max-height: 200px;
     display: block;
     margin: auto;
     margin-top: 5px;
     margin-bottom: 10px;
-    border: 1px solid black;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -34,11 +41,12 @@ li.pagination-content-item > .post > .post-main {
 }
 li.pagination-content-item > .post > .post-main > .post-content {
     min-height: 150px;
+    padding: 5px 10px;
 }
 li.pagination-content-item > .post > .post-main .post-signature:not(:empty) {
     border-top: 1px dashed grey;
     min-height: 30px;
-    padding: 5px;
+    padding: 5px 10px;
 }
 li.pagination-content-item > .post > .post-main .post-likes:not(:empty) {
     margin: 5px;
@@ -46,4 +54,55 @@ li.pagination-content-item > .post > .post-main .post-likes:not(:empty) {
     margin-left: 20px;
     padding-left: 5px;
     border-left: green 3px solid;
+}
+
+
+@media only screen and (max-width: 700px) {
+    li.pagination-content-item > .post {
+        grid-template-columns: 1fr; 
+    }
+
+    li.pagination-content-item > .post > .post-user {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    li.pagination-content-item > .post > .post-user > .post-username {
+        display: block;
+    }
+
+    li.pagination-content-item > .post > .post-user > .post-image {
+        width: 50px;
+        height: 50px; 
+        max-width: 100%;
+        border-radius: 50%;
+        margin: 0;
+        object-fit: cover;
+    }
+
+    li.pagination-content-item > .post > .post-main {
+        width: 100%;
+    }
+
+    li.pagination-content-item > .post > .post-main > .post-content {
+        min-height: 0;
+    }
+
+    li.pagination-content-item > .post > .post-main .post-signature:not(:empty) {
+        min-height: 0;
+    }
+
+    li.pagination-content-item > .post > .post-main .post-likes:not(:empty) {
+        margin: 5px 0;
+        line-height: 1em;
+        margin-left: 0; 
+        padding-left: 10px;
+        border-left: none; 
+    }
 }

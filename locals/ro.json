@@ -1,0 +1,69 @@
+{
+    "header": {
+      "login": "Autentificare",
+      "register": "Creează Cont",
+      "edit": "Editare Profil",
+      "logout": "Ieșire"
+    },
+    "tabs": {
+        "forum": "Forum",
+        "users": "Utilizatori",
+        "admin": "Administrator"
+    },
+    "users": {
+        "title": "Utilizatori"
+    },
+    "user": {
+        "title": "Informații",
+        "about_me": "Despre mine",
+        "post": "Postări",
+        "day": "S-a alăturat la: ",
+        "num_posts": "Postări: ",
+        "edit": "Editare!"
+    },
+    "edituser": {
+        "title": "Editare utilizator",
+        "img": "Imagine Profil: ",
+        "alt_img": "Imagine anterioară profil",
+        "username": "Utilizator: ",
+        "description": "Descriere: ",
+        "signature": "Semnătură: ",
+        "save": "Salvează"
+    },
+    "createthread": {
+        "title": "Fir nou: ",
+        "thread": "Titlu: ",
+        "category": "Categorie: ",
+        "post": "Prima postare: ",
+        "submit": "Trimite"
+    },
+    "thread": {
+        "banner": "Nu există conținut pentru trimitere"
+    },
+    "popup": {
+        "textarea": "Scrie replica aici...",
+        "btn": "Trimite",
+        "btn_cancel": "Anulare"
+    },
+    "login": {
+        "title": "Autentificare",
+        "username": "Utilizator",
+        "passwd": "Parola",
+        "btn": "Autentificare",
+        "link": "Nu ai un cont creat?",
+        "register": "Creează cont"
+    },
+    "register": {
+        "title": "Autentificare",
+        "username": "Utilizator",
+        "pass": "Parola",
+        "pass2": "Repetă parola",
+        "btn": "Creează cont",
+        "link": "Ai deja un cont creat? ",
+        "login": "Autentificare"
+    },
+    "footer": {
+        "privacy": "Politica de confidențialitate",
+        "terms": "Termeni si condiții"
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "header": {
+      "login": "로그인",
+      "register": "가입하기",
+      "edit": "프로필 수정",
+      "logout": "로그아웃"
+    },
+    "tabs": {
+        "forum": "포럼",
+        "users": "사용자",
+        "admin": "관리자"
+    },
+    "users": {
+        "title": "사용자"
+    },
+    "user": {
+        "title": "정보",
+        "about_me": "내 정보",
+        "post": "게시물",
+        "day": "에 가입: ",
+        "num_posts": "게시물: ",
+        "edit": "편집!"
+    },
+    "edituser": {
+        "title": "사용자 수정",
+        "img": "프로필 이미지: ",
+        "alt_img": "프로필 이미지의 프리뷰 보기",
+        "username": "사용자 이름: ",
+        "description": "설명: ",
+        "signature": "서명: ",
+        "save": "저장"
+    },
+    "createthread": {
+        "title": "새 스레드: ",
+        "thread": "제목: ",
+        "category": "카테고리: ",
+        "post": "첫 번째 게시물: ",
+        "submit": "제출"
+    },
+    "thread": {
+        "banner": "게시물은 비워둘 수 없습니다."
+    },
+    "popup": {
+        "textarea": "여기에 답장을 입력하세요...",
+        "btn": "보내기",
+        "btn_cancel": "취소"
+    },
+    "login": {
+        "title": "로그인",
+        "username": "사용자 이름",
+        "passwd": "비밀번호",
+        "btn": "로그인",
+        "link": "계정이 없으신가요?",
+        "register": "가입하기"
+    },
+    "register": {
+        "title": "가입하기",
+        "username": "사용자 이름",
+        "pass": "비밀번호",
+        "pass2": "비밀번호 반복",
+        "btn": "계정 등록",
+        "link": "이미 계정이 있으신가요? ",
+        "login": "로그인"
+    },
+    "footer": {
+        "privacy": "개인정보 보호정책",
+        "terms": "서비스 약관"
+    }
+}

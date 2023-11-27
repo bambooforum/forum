@@ -61,4 +61,34 @@ add.addEventListener('click', () => {
     edit.addEventListener('click', editfn);
     del.addEventListener('click', delfn)
     edit.dispatchEvent(new Event('click'))
-})
+});
+
+/**
+ * @type {HTMLFormElement}
+ */
+const f = document.querySelector('main form#user-form');
+f.addEventListener('submit', async event => {
+    event.preventDefault();
+    const form = event.target;
+    const action = form.attributes.getNamedItem('action').value;
+    const submitter = event.submitter.value;
+    const method = form.method;
+    const name = form.querySelector('input[name=\'name\']').value;
+    console.log(form, submitter, name, action, form.encoding)
+
+    if(!name) return;
+
+    const urlencoded = new URLSearchParams({
+        name,
+        action: submitter
+    }).toString();
+
+    const response = await fetch(action, {
+        method,
+        body: urlencoded,
+        headers: {
+            'Content-Type':form.encoding
+        }
+    });
+    console.log(await response.json());
+});

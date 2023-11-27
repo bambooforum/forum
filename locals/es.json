@@ -1,0 +1,69 @@
+{
+    "header": {
+        "login": "Entrar",
+        "register": "Registrarse",
+        "edit": "Editar perfil",
+        "logout": "Salir" 
+    },
+    "tabs": {
+        "forum": "Foro",
+        "users": "Usuarios",
+        "admin": "Administrador"
+    },
+    "users": {
+        "title": "Usuarios"
+    },
+    "user": {
+        "title": "Información",
+        "about_me": "Sobre mí",
+        "post": "Publicaciones",
+        "day": "Día de unión: ",
+        "num_posts": "Publicaciones: ",
+        "edit": "Editar!"
+    },
+    "edituser": {
+        "title": "Editar el usuario",
+        "img": "Imagen del Perfil: ",
+        "alt_img": "Vista prèvia de la imagen de perfil",
+        "username": "Nombre de Usuario: ",
+        "description": "Descripción: ",
+        "signature": "Signatura: ",
+        "save": "Guardar"
+    },
+    "createthread": {
+        "title": "Crear hilo",
+        "thread": "Titulo: ",
+        "category": "Categoria:",
+        "post": "Primera publicación: ",
+        "submit": "Enviar"
+    },
+    "thread": {
+        "banner": "No hay contenido para enviar"
+    },
+    "popup": {
+        "textarea": "Escribe tu respuesta aqui...",
+        "btn": "Enviar",
+        "btn_cancel": "Cancelar"
+    },
+    "login": {
+        "title": "Iniciar Sessión",
+        "username": "Nombre de usuario",
+        "passwd": "Contraseña",
+        "btn": "Iniciar Sesió",
+        "link": "No tienes una cuenta?",
+        "register": "Registrate"
+    },
+    "register": {
+        "title": "Registrarse",
+        "username": "Nombre de usuario",
+        "pass": "Contraseña",
+        "pass2": "Repite la contraseña",
+        "btn": "Registrate",
+        "link": "ya tienes una cuenta? ",
+        "login": "Iniciar Sesión"
+    },
+    "footer": {
+        "privacy": "Política de Privacidad",
+        "terms": "Términos de servicio"
+    }
+}

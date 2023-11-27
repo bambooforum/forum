@@ -1,0 +1,69 @@
+{
+    "header": {
+      "login": "Sartu",
+      "register": "Izena eman",
+      "edit": "Aldatu profila",
+      "logout": "Irten"
+    },
+    "tabs": {
+        "forum": "Forum",
+        "users": "Erabiltzaileak",
+        "admin": "Administratzaile"
+    },
+    "users": {
+        "title": "Erabiltzaileak"
+    },
+    "user": {
+        "title": "Informazioa",
+        "about_me": "Nire informazioa",
+        "post": "Mezuak",
+        "day": "Iritsi zen:",
+        "num_posts": "Mezuak: ",
+        "edit": "Aldatu!"
+    },
+    "edituser": {
+        "title": "Aldatu erabiltzailea",
+        "img": "Erabiltzaile argazkia: ",
+        "alt_img": "Erabiltzaile argazkiaren itxura:",
+        "username": "Erabiltzailea: ",
+        "description": "Informazioa: ",
+        "signature": "Sinadura: ",
+        "save": "Gorde"
+    },
+    "createthread": {
+        "title": "Hari berri bat: ",
+        "thread": "Izenburua: ",
+        "category": "Kategoria: ",
+        "post": "Lehen mezua: ",
+        "submit": "Bidali"
+    },
+    "thread": {
+        "banner": "Mezu honek ezin du hutsik egon."
+    },
+    "popup": {
+        "textarea": "Idatzi zure erantzuna hemen...",
+        "btn": "Bidali",
+        "btn_cancel": "Ezeztatu"
+    },
+    "login": {
+        "title": "Erabiltzailea",
+        "username": "Erabiltzaile-izena",
+        "passwd": "Pahatiza",
+        "btn": "Login",
+        "link": "Ez duzu izenik eman?",
+        "register": "Kontua sortu"
+    },
+    "register": {
+        "title": "Izena eman",
+        "username": "Erabiltzaile-izena",
+        "pass": "Pasahitza",
+        "pass2": "Errepikatu pasahitza",
+        "btn": "Kontua sortu",
+        "link": "Kontu bat jada baduzu? ",
+        "login": "Sartu"
+    },
+    "footer": {
+        "privacy": "Pribatutasun-Politika",
+        "terms": "Parte-hartze arauak"
+    }
+}

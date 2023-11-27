@@ -33,3 +33,4 @@ for(const element of document.querySelector('form').querySelectorAll('input, tex
     });
     element.dispatchEvent(new Event('input'))
 }
+

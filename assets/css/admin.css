@@ -29,3 +29,6 @@ main li {
     display: flex;
     justify-content: space-between;
 }
+main .primarybtn, main .secondarybtn, main .dangerbtn, main .item-name {
+  padding: .2em 10px;
+}
