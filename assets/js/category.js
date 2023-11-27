@@ -1,4 +1,4 @@
-pagination((li, data) => {
+pagination('/api/threads/partial.php', (li, data) => {
     function create(type, classes) {
         const element = document.createElement(type);
         for(const classname of classes) {
@@ -15,20 +15,25 @@ pagination((li, data) => {
     }
 
     const thread = create('div', ['thread']);
-    thread.setAttribute('data-author', 'author');
-    thread.setAttribute('data-id', data?.id ?? 1);
+    thread.setAttribute('data-author', data.authorName);
+    thread.setAttribute('data-id', data.id);
 
     const title = create('h3', []);
     const titlelink = create('a', ['titulo-thread']);
-    titlelink.textContent = 'Thread title';
-    titlelink.href = '/thread.html';
+    titlelink.textContent = data.title;
+    titlelink.href = '/thread.php?thread_id=' + data.id;
     // const authorimage = create('img', [])
     const smalltext = create('span', []);
-    smalltext.textContent = 'lorem ipsum diem sit amet.'
+    smalltext.textContent = data.text;
 
     li.appendChild(append(thread, [
         append(title, [titlelink]),
         smalltext
     ]))
     return li;
-});
+}, [{
+    category_id: categoryId
+}]);
+document.getElementById('pagination-page-control-button').addEventListener('click', () => {
+    window.location = '/createthread.php?category_id=' + categoryId;
+})

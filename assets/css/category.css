@@ -1,19 +1,15 @@
-.thread {
-  border: 1px solid #000; 
+main .thread {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
   padding: 10px; 
   border-radius: 5px;
 }
-h3 {
+main h3 {
   margin: 0;
 }
-.thread {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff; 
 
-}
-
-a {
+main a {
   color: inherit;
   text-decoration: none;
 }
